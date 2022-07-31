@@ -1,0 +1,7 @@
+name: CombatNerf
+version: '${project.version}'
+main: com.earthpol.combatnerf.Main
+api-version: 1.19
+authors: [ 0xBit ]
+description: A simple plugin that nerf's extra combat stuff we don't want in EarthPol
+website: https://www.earthpol.com
