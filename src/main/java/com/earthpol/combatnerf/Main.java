@@ -56,7 +56,9 @@ public final class Main extends JavaPlugin {
 
                         //Remove Poison in Siege War Zone
                         if(player.hasPotionEffect(PotionEffectType.POISON)){
-                            player.removePotionEffect(PotionEffectType.POISON);
+                            if(Objects.requireNonNull(player.getPotionEffect(PotionEffectType.POISON)).getAmplifier() > 1){
+                                player.removePotionEffect(PotionEffectType.POISON);
+                            }
                         }
 
                         //Remove Slowness in Siege War Zone
