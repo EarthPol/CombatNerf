@@ -43,78 +43,93 @@ public final class Main extends JavaPlugin {
                 if (event.getPacketType() == PacketType.Play.Server.ENTITY_EFFECT){
                     Player player = event.getPlayer();
 
-                    //Remove Invisibility in SiegeWar Zone
-                    if(player.hasPotionEffect(PotionEffectType.INVISIBILITY) && SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation())){
-                        player.removePotionEffect(PotionEffectType.INVISIBILITY);
-                    }
+                    if(SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation())){
+                        //Remove Invisibility in SiegeWar Zone
+                        if(player.hasPotionEffect(PotionEffectType.INVISIBILITY)){
+                            player.removePotionEffect(PotionEffectType.INVISIBILITY);
+                        }
 
-                    //Remove Blindness in Siege War Zone
-                    if(player.hasPotionEffect(PotionEffectType.BLINDNESS) && SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation())){
-                        player.removePotionEffect(PotionEffectType.BLINDNESS);
-                    }
+                        //Remove Blindness in Siege War Zone
+                        if(player.hasPotionEffect(PotionEffectType.BLINDNESS)){
+                            player.removePotionEffect(PotionEffectType.BLINDNESS);
+                        }
 
-                    //Remove Poison in Siege War Zone
-                    if(player.hasPotionEffect(PotionEffectType.POISON) && SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation())){
-                        player.removePotionEffect(PotionEffectType.POISON);
-                    }
+                        //Remove Poison in Siege War Zone
+                        if(player.hasPotionEffect(PotionEffectType.POISON)){
+                            player.removePotionEffect(PotionEffectType.POISON);
+                        }
 
-                    //Remove Slowness in Siege War Zone
-                    if(player.hasPotionEffect(PotionEffectType.SLOW) && SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation())){
-                        player.removePotionEffect(PotionEffectType.SLOW);
-                    }
+                        //Remove Slowness in Siege War Zone
+                        if(player.hasPotionEffect(PotionEffectType.SLOW)){
+                            player.removePotionEffect(PotionEffectType.SLOW);
+                        }
 
-                    //Remove Slow Digging in Siege War Zone
-                    if(player.hasPotionEffect(PotionEffectType.SLOW_DIGGING) && SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation())){
-                        player.removePotionEffect(PotionEffectType.SLOW_DIGGING);
-                    }
+                        //Remove Slow Digging in Siege War Zone
+                        if(player.hasPotionEffect(PotionEffectType.SLOW_DIGGING)){
+                            player.removePotionEffect(PotionEffectType.SLOW_DIGGING);
+                        }
 
-                    //Remove Haste in Siege War Zone
-                    if(player.hasPotionEffect(PotionEffectType.FAST_DIGGING) && SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation())){
-                        player.removePotionEffect(PotionEffectType.FAST_DIGGING);
-                    }
+                        //Remove Haste in Siege War Zone
+                        if(player.hasPotionEffect(PotionEffectType.FAST_DIGGING)){
+                            player.removePotionEffect(PotionEffectType.FAST_DIGGING);
+                        }
 
-                    //Remove Wither in Siege War Zone
-                    if(player.hasPotionEffect(PotionEffectType.WITHER) && SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation())){
-                        player.removePotionEffect(PotionEffectType.WITHER);
-                    }
+                        //Remove Wither in Siege War Zone
+                        if(player.hasPotionEffect(PotionEffectType.WITHER)){
+                            player.removePotionEffect(PotionEffectType.WITHER);
+                        }
 
-                    //Remove Hunger in Siege War Zone
-                    if(player.hasPotionEffect(PotionEffectType.HUNGER) && SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation())){
-                        player.removePotionEffect(PotionEffectType.HUNGER);
-                    }
+                        //Remove Hunger in Siege War Zone
+                        if(player.hasPotionEffect(PotionEffectType.HUNGER)){
+                            player.removePotionEffect(PotionEffectType.HUNGER);
+                        }
 
-                    //Remove Health Boost in Siege War Zone
-                    if(player.hasPotionEffect(PotionEffectType.HEALTH_BOOST) && SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation())){
-                        player.removePotionEffect(PotionEffectType.HEALTH_BOOST);
-                    }
+                        //Remove Health Boost in Siege War Zone
+                        if(player.hasPotionEffect(PotionEffectType.HEALTH_BOOST)){
+                            player.removePotionEffect(PotionEffectType.HEALTH_BOOST);
+                        }
 
-                    //Remove Nausea in Siege War Zone
-                    if(player.hasPotionEffect(PotionEffectType.CONFUSION) && SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation())){
-                        player.removePotionEffect(PotionEffectType.CONFUSION);
-                    }
+                        //Remove Nausea in Siege War Zone
+                        if(player.hasPotionEffect(PotionEffectType.CONFUSION)){
+                            player.removePotionEffect(PotionEffectType.CONFUSION);
+                        }
 
-                    //Remove Saturation Boost in Siege War Zone
-                    if(player.hasPotionEffect(PotionEffectType.SATURATION) && SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation())){
-                        player.removePotionEffect(PotionEffectType.SATURATION);
-                    }
+                        //Remove Saturation Boost in Siege War Zone
+                        if(player.hasPotionEffect(PotionEffectType.SATURATION)){
+                            player.removePotionEffect(PotionEffectType.SATURATION);
+                        }
 
-                    //Remove Damage Resistance in Siege War Zone
-                    if(player.hasPotionEffect(PotionEffectType.DAMAGE_RESISTANCE) && SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation())){
-                        player.removePotionEffect(PotionEffectType.DAMAGE_RESISTANCE);
-                    }
+                        //Remove Damage Resistance in Siege War Zone
+                        if(player.hasPotionEffect(PotionEffectType.DAMAGE_RESISTANCE)){
+                            player.removePotionEffect(PotionEffectType.DAMAGE_RESISTANCE);
+                        }
 
-                    //Remove Levitation
-                    if(player.hasPotionEffect(PotionEffectType.LEVITATION) && SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation())){
-                        player.removePotionEffect(PotionEffectType.LEVITATION);
-                    }
+                        //Remove Levitation
+                        if(player.hasPotionEffect(PotionEffectType.LEVITATION)){
+                            player.removePotionEffect(PotionEffectType.LEVITATION);
+                        }
 
-                    //Remove increased strength in Siege War Zone
-                    if(player.hasPotionEffect(PotionEffectType.INCREASE_DAMAGE) && SiegeWarDistanceUtil.isLocationInActiveSiegeZone(player.getLocation())){
-                        if(Objects.requireNonNull(player.getPotionEffect(PotionEffectType.INCREASE_DAMAGE)).getAmplifier() > 1){
-                            player.removePotionEffect(PotionEffectType.INCREASE_DAMAGE);
+                        //Remove increased health in Siege War Zone
+                        if(player.hasPotionEffect(PotionEffectType.HEAL)){
+                            if(Objects.requireNonNull(player.getPotionEffect(PotionEffectType.HEAL)).getAmplifier() > 1){
+                                player.removePotionEffect(PotionEffectType.HEAL);
+                            }
+                        }
+
+                        //Remove increased health in Siege War Zone
+                        if(player.hasPotionEffect(PotionEffectType.REGENERATION)){
+                            if(Objects.requireNonNull(player.getPotionEffect(PotionEffectType.REGENERATION)).getAmplifier() > 1){
+                                player.removePotionEffect(PotionEffectType.REGENERATION);
+                            }
+                        }
+
+                        //Remove increased strength in Siege War Zone
+                        if(player.hasPotionEffect(PotionEffectType.INCREASE_DAMAGE)){
+                            if(Objects.requireNonNull(player.getPotionEffect(PotionEffectType.INCREASE_DAMAGE)).getAmplifier() > 1){
+                                player.removePotionEffect(PotionEffectType.INCREASE_DAMAGE);
+                            }
                         }
                     }
-
                 }
             }
         });
