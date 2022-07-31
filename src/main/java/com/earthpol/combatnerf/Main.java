@@ -63,7 +63,9 @@ public final class Main extends JavaPlugin {
 
                         //Remove Slowness in Siege War Zone
                         if(player.hasPotionEffect(PotionEffectType.SLOW)){
-                            player.removePotionEffect(PotionEffectType.SLOW);
+                            if(Objects.requireNonNull(player.getPotionEffect(PotionEffectType.SLOW)).getAmplifier() > 1){
+                                player.removePotionEffect(PotionEffectType.SLOW);
+                            }
                         }
 
                         //Remove Slow Digging in Siege War Zone
