@@ -128,13 +128,6 @@ public final class Main extends JavaPlugin {
                                 player.removePotionEffect(PotionEffectType.INCREASE_DAMAGE);
                             }
                         }
-                        
-                         //Remove absorption 2 in Siege War Zone
-                        if(player.hasPotionEffect(PotionEffectType.ABSORPTION)){
-                            if(Objects.requireNonNull(player.getPotionEffect(PotionEffectType.ABSORPTION)).getAmplifier() >= 1){
-                                player.removePotionEffect(PotionEffectType.ABSORPTION);
-                            }
-                        }
                     }
                 }
             }
