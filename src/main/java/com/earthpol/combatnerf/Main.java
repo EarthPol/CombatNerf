@@ -98,10 +98,6 @@ public final class Main extends JavaPlugin {
                             player.removePotionEffect(PotionEffectType.SATURATION);
                         }
                         
-                        if(player.hasPotionEffect(PotionEffectType.HELPFUL)){
-                            player.removePotionEffect(PotionEffectType.HELPFUL);
-                        }
-
                         //Remove Damage Resistance in Siege War Zone
                         if(player.hasPotionEffect(PotionEffectType.DAMAGE_RESISTANCE)){
                             player.removePotionEffect(PotionEffectType.DAMAGE_RESISTANCE);
