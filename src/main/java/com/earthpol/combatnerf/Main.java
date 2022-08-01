@@ -73,11 +73,6 @@ public final class Main extends JavaPlugin {
                             player.removePotionEffect(PotionEffectType.SLOW_DIGGING);
                         }
 
-                        //Remove Haste in Siege War Zone
-                        if(player.hasPotionEffect(PotionEffectType.FAST_DIGGING)){
-                            player.removePotionEffect(PotionEffectType.FAST_DIGGING);
-                        }
-
                         //Remove Wither in Siege War Zone
                         if(player.hasPotionEffect(PotionEffectType.WITHER)){
                             player.removePotionEffect(PotionEffectType.WITHER);
